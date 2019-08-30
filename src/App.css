@@ -22,6 +22,9 @@
 .App-link {
   color: #61dafb;
 }
+.login-container {
+  background: #282c34;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -31,3 +34,21 @@
     transform: rotate(360deg);
   }
 }
+
+.initechNode {
+  border: solid 3px red;
+  border-radius: 3px;
+  padding: 5px;
+  width: 150px;
+  display: inline-block;
+}
+
+#initechOrgChart .orgNodeChildGroup .nodeGroupLineVerticalMiddle {
+  border-right: solid 3px red
+}
+
+#initechOrgChart .nodeLineBorderTop {
+  border-top: solid 3px red;
+}
+
+
