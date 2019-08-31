@@ -1,13 +1,9 @@
 {
   "name": "ibad-admin",
-  "homepage": "http://beta.ibad.com.my/",
+  "homepage": "http://ibadpro.webexpert.work/",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "12.0.0",
-    "yarn": "1.15.2",
-    "npm": "6.9.0"
-  },
+  
   "dependencies": {
     "@bibliomondo/react-org-chart": "^0.1.5",
     "@keymastervn/react-org-chart-next": "^0.2.1",
@@ -17,6 +13,7 @@
     "lorem-ipsum": "^2.0.3",
     "orgchart": "^2.1.2",
     "react": "^16.8.6",
+    "react-cardstack": "^1.1.0",
     "react-confirm-alert": "^2.4.1",
     "react-dom": "^16.8.6",
     "react-input-validation": "^1.0.4",
