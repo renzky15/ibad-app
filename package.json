@@ -1,8 +1,13 @@
 {
   "name": "ibad-admin",
-  "homepage": "http://ibadpro.webexpert.work/",
+  
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "12.0.0",
+    "yarn": "1.15.2",
+    "npm": "6.9.0"
+  },
   
   "dependencies": {
     "@bibliomondo/react-org-chart": "^0.1.5",
