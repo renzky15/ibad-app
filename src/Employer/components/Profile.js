@@ -95,7 +95,7 @@ export default class Profile extends Component {
     
     componentDidMount() {
 
-        Axios.get(`http://localhost/react/api/Employer/Profile/readOrg.php`)
+        Axios.get(`https://ibad-api.herokuapp.com/api/Employer/Profile/readOrg.php`)
             .then(response =>
 
                 response.data.response_array.map(result => ({

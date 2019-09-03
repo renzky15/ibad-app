@@ -18,7 +18,7 @@ export default class Job extends Component {
     };
     handleRead = () => {
         // e.preventDefault();
-        Axios.get('http://localhost/react/api/Job/read.php')
+        Axios.get('https://ibad-api.herokuapp.com/react/api/Job/read.php')
             .then(response => {
                 console.log(response)
                 // const response_data =[];
@@ -75,7 +75,7 @@ export default class Job extends Component {
         })
     };
     handleDelete = (job_id) => {
-        Axios.delete('http://localhost/react/api/Job/delete.php', {
+        Axios.delete('https://ibad-api.herokuapp.com/react/api/Job/delete.php', {
             headers: {
                 Authorization: ''
             },
@@ -96,7 +96,7 @@ export default class Job extends Component {
         // const attachment =this.state.attachment;
         // let form =  new FormData();
         // form.append('email', this.state.mailTo);
-        Axios.post('http://localhost/react/api/Employer/JobOffer/sendEmail.php', {
+        Axios.post('https://ibad-api.herokuapp.com/api/Employer/JobOffer/sendEmail.php', {
             'email': email
 
             // 'attachment': attachment
@@ -120,7 +120,7 @@ export default class Job extends Component {
         // this.handleRead();
         // console.log('Component Mounted.')
 
-        Axios.get(`http://localhost/react/api/Job/read.php`)
+        Axios.get(`https://ibad-api.herokuapp.com/react/api/Job/read.php`)
             .then(response =>
 
                 // const response_data =[];

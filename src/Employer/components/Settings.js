@@ -45,7 +45,7 @@ export default class Settings extends Component {
         e.preventDefault();
         const { company_name, business_num, mission, vision, address } = this.state;
 
-        Axios.post('http://localhost/react/api/Employer/Settings/companyPost.php', {
+        Axios.post('https://ibad-api.herokuapp.com/api/Employer/Settings/companyPost.php', {
             company_name,
             business_num,
             mission,
@@ -61,7 +61,7 @@ export default class Settings extends Component {
         e.preventDefault();
         const  dept_name  = this.state.department_name
         dept_name.forEach(dept_name => {
-            Axios.post('http://localhost/react/api/Employer/Settings/departmentPost.php', {
+            Axios.post('https://ibad-api.herokuapp.com/api/Employer/Settings/departmentPost.php', {
                 dept_name:dept_name
         })
             .then(res =>

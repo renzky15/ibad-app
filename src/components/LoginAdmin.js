@@ -59,7 +59,7 @@ export default class LoginAdmin extends Component {
 
         // let form =  new FormData();
         // form.append('email', this.state.mailTo);
-        axios.post('http://localhost/react/api/post/login.php', {
+        axios.post('https://ibad-api.herokuapp.com/api/post/login.php', {
             email,password
             
         })

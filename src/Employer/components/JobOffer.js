@@ -26,7 +26,7 @@ export default class JobOffer extends Component {
         const job_role = this.state.job_role;
         const company = this.state.compnay;
     
-        Axios.post('http://localhost/react/api/Employer/JobOffer/create.php', {
+        Axios.post('https://ibad-api.herokuapp.com/react/api/Employer/JobOffer/create.php', {
                 'job_title': job_title,
                 'job_desc': job_desc,
                 'company': company,

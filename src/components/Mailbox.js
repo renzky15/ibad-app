@@ -21,7 +21,7 @@ export default class Mailbox extends Component {
         // const attachment =this.state.attachment;
         // let form =  new FormData();
         // form.append('email', this.state.mailTo);
-        Axios.post('http://localhost/react/models/sendEmail.php', {
+        Axios.post('https://ibad-api.herokuapp.com/models/sendEmail.php', {
             'email': email,
             'company_name': company_name           // 'attachment': attachment
 

@@ -66,7 +66,7 @@ export default class JobDetail extends Component {
         // const job_role = this.state.job_role;
         // const company = this.state.compnay;
     
-        Axios.put(`http://localhost/react/api/Job/update.php?job_id=${job_id}`, {
+        Axios.put(`https://ibad-api.herokuapp.com/api/Job/update.php?job_id=${job_id}`, {
                 // 'job_title': job_title,
                 // 'job_desc': job_desc,
                 // 'company': company,

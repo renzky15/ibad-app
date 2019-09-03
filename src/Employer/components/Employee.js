@@ -26,7 +26,7 @@ export default class Employee extends Component {
             alert('Please input all necessary fields.');
         }else {
 
-        Axios.post('http://localhost/react/api/Employer/Employee/post.php', {
+        Axios.post('https://ibad-api.herokuapp.com/api/Employer/Employee/post.php', {
             'first_name': first_name,
             'last_name': last_name,
             'position': position,
@@ -54,7 +54,7 @@ export default class Employee extends Component {
     handleSingleRead = (id) => {
         // const job_id = this.props.match.params.postId;
     
-        Axios.get(`http://localhost/react/api/Employer/Employee/readSingle.php?e_id=${id}`)
+        Axios.get(`https://ibad-api.herokuapp.com/api/Employer/Employee/readSingle.php?e_id=${id}`)
         .then(response => {
             
             this.setState({
@@ -91,7 +91,7 @@ export default class Employee extends Component {
     };
 
     handleDelete = (e_id) => {
-        Axios.delete('http://localhost/react/api/Employer/Employee/delete.php', {
+        Axios.delete('https://ibad-api.herokuapp.com/api/Employer/Employee/delete.php', {
             headers: {
                 Authorization: ''
             },
@@ -116,7 +116,7 @@ export default class Employee extends Component {
             e_id:e_id,
             test: firstName
         }
-        Axios.put(`http://localhost/react/api/Employer/Employee/update.php/${e_id}`, employee
+        Axios.put(`https://ibad-api.herokuapp.com/api/Employer/Employee/update.php/${e_id}`, employee
                 // 'job_title': job_title,
                 // 'job_desc': job_desc,
                 // 'company': company,
@@ -132,7 +132,7 @@ export default class Employee extends Component {
     };
 
     componentDidMount() {
-        Axios.get(`http://localhost/react/api/Employer/Employee/read.php`)
+        Axios.get(`https://ibad-api.herokuapp.com/api/Employer/Employee/read.php`)
             .then(response =>
                 response.data.response_array.map(result => ({
                     e_id: `${result.e_id}`,

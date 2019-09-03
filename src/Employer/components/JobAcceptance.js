@@ -9,7 +9,7 @@ export default class JobAcceptance extends Component {
     };
 
     componentDidMount() {
-        Axios.get(`http://localhost/react/api/Employer/JobAcceptance/read.php`)
+        Axios.get(`https://ibad-api.herokuapp.com/api/Employer/JobAcceptance/read.php`)
             .then(response =>
                 response.data.response_array.map(result => ({
                     job_code: `${result.job_code}`,
